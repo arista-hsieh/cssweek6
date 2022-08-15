@@ -67,8 +67,8 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #62DB54; 
+$secondary:     #2D2D2D !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -216,7 +216,7 @@ $escaped-characters: (
 $enable-caret:                true !default;
 $enable-rounded:              true !default;
 $enable-shadows:              false !default;
-$enable-gradients:            false !default;
+$enable-gradients:            true  !default;
 $enable-transitions:          true !default;
 $enable-reduced-motion:       true !default;
 $enable-smooth-scroll:        true !default;
@@ -255,6 +255,9 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 2,
+  7: $spacer * 2.25,
+  8: $spacer * 5,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
