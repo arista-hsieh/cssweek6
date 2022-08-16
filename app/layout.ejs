@@ -52,6 +52,7 @@
             </div>
             <button type="submit" class="login mb-5 btn btn-grandient">登入</button>
           </form>
+          
           <div class="other mb-3 text-light text-center">其他登入方式</div>
           <div class="fb btn btn-outline-light mb-4"><img src="./assets/images/icon_fb.svg" alt="facebook">Facebook 登入</div>
           <div class="google btn btn-outline-light"><img src="./assets/images/icon_google.svg" alt="google">Google 登入</div>
@@ -93,8 +94,10 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
-  $(".navBar").slideUp();
-  $(".icon").on("click", function () {
-    $(".navBar").slideToggle();
+  $(document).ready(function(){
+    $(".navBar").slideUp();
+    $(".icon").click(function () {
+      $(".navBar").slideToggle();
+    });
   })
 </script>
