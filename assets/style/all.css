@@ -13100,13 +13100,42 @@ h1, .h1 {
 }
 
 .card {
-  border: 1px solid #2D2D2D;
-  background-color: #2D2D2D;
+  background: #2D2D2D;
+  padding: 32px;
 }
 
-.card:hover {
-  border: 1px solid #62DB54;
-  border-radius: 24px;
+.squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+}
+
+.squareRounded-topLeft {
+  border-top: 2px solid #62db54;
+  border-left: 2px solid #62db54;
+  border-top-left-radius: 24px;
+}
+
+.squareRounded-topRight {
+  border-top: 2px solid #62db54;
+  border-right: 2px solid #62db54;
+  border-top-right-radius: 24px;
+}
+
+.squareRounded-bottomLeft {
+  border-bottom: 2px solid #62db54;
+  border-left: 2px solid #62db54;
+  border-bottom-left-radius: 24px;
+}
+
+.squareRounded-bottomRight {
+  border-bottom: 2px solid #62db54;
+  border-right: 2px solid #62db54;
+  border-bottom-right-radius: 24px;
+}
+
+.card:hover .squareRounded {
+  display: block;
 }
 
 .card-title {
