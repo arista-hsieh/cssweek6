@@ -380,14 +380,40 @@ h1 {
 }
 
 .card {
-  border: 1px solid #2D2D2D;
-  background-color: #2D2D2D;
-
-  &:hover {
-    border: 1px solid #62DB54;
-    border-radius: 24px;
+  background: #2D2D2D;
+  padding: 32px;
+}
+.squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+  &-topLeft {
+    border-top: 2px solid #62db54;
+    border-left: 2px solid #62db54;
+    border-top-left-radius: 24px;
+  }
+  &-topRight {
+    border-top: 2px solid #62db54;
+    border-right: 2px solid #62db54;
+    border-top-right-radius: 24px;
+  }
+  &-bottomLeft {
+    border-bottom: 2px solid #62db54;
+    border-left: 2px solid #62db54;
+    border-bottom-left-radius: 24px;
+  }
+  &-bottomRight {
+    border-bottom: 2px solid #62db54;
+    border-right: 2px solid #62db54;
+    border-bottom-right-radius: 24px;
   }
 }
+.card:hover {
+  .squareRounded {
+    display: block;
+  }
+}
+
 
 .card-title {
   font-size: 18px;
