@@ -13261,7 +13261,7 @@ h1, .h1 {
           transform: translateY(50%);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .swiper .comment-img {
     width: 80px;
     height: 80px;
@@ -13274,7 +13274,7 @@ h1, .h1 {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .swiper .comment {
     position: relative;
     width: 100%;
@@ -13321,7 +13321,7 @@ h1, .h1 {
   position: absolute;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .swiper-buttons {
     position: initial;
     -webkit-transform: none;
