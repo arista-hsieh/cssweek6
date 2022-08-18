@@ -12735,12 +12735,15 @@ nav {
   text-decoration: none;
 }
 
+.navBar a:hover {
+  color: #62DB54;
+}
+
 .material-icons {
   vertical-align: middle;
 }
 
 .footer {
-  height: 67px;
   color: #909090;
   font-size: 16px;
   line-height: 19px;
@@ -12779,7 +12782,7 @@ h1, .h1 {
   position: relative;
 }
 
-.box :before {
+.box:before {
   content: "";
   width: 10px;
   height: 10px;
@@ -12895,7 +12898,6 @@ h1, .h1 {
 }
 
 .reservation {
-  height: 200px;
   border: 1px solid #fff;
   border-radius: 12px;
   position: relative;
@@ -12916,6 +12918,10 @@ h1, .h1 {
   background-color: #212529;
 }
 
+.font {
+  font-family: 'Noto Sans TC';
+}
+
 .scroll {
   overflow-x: auto;
 }
@@ -12923,6 +12929,7 @@ h1, .h1 {
 .classes {
   border-radius: 24px;
   text-align: center;
+  border: 1px solid #2D2D2D;
 }
 
 .classes:hover {
@@ -12939,12 +12946,14 @@ h1, .h1 {
   margin-top: 44px;
 }
 
-.btn-grandient {
-  background: -webkit-gradient(linear, right top, left top, from(#62DB54), to(#09ACF5));
-  background: -o-linear-gradient(right, #62DB54, #09ACF5);
-  background: linear-gradient(to left, #62DB54, #09ACF5);
+.margin2 {
+  margin-top: 8px;
+}
+
+.btn-gradient {
+  background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
+  background: linear-gradient(104deg, #09ACF5, #62DB54);
   width: 172px;
-  margin: 0 auto;
 }
 
 .spacer {
@@ -13158,6 +13167,7 @@ h1, .h1 {
 }
 
 .share img {
+  position: relative;
   max-width: 525px;
   border-radius: 24px;
   margin-bottom: 198px;
@@ -13167,7 +13177,7 @@ h1, .h1 {
   position: absolute;
   border-radius: 24px 24px 24px 0;
   background-color: #fff;
-  top: 251px;
+  top: 261px;
   left: 509px;
   width: 416px;
 }
@@ -13284,6 +13294,37 @@ input[type="password"] {
   margin-right: 68px;
 }
 
+@media (max-width: 1200px) {
+  .margin {
+    margin-top: 74px;
+  }
+  .margin2 {
+    margin-top: 46px;
+  }
+}
+
+@media (max-width: 992px) {
+  .share img {
+    max-width: 600px;
+    margin-bottom: 359px;
+  }
+  .share .comment {
+    width: 600px;
+    padding-bottom: 16px;
+    left: 0;
+    top: 600px;
+  }
+}
+
+@media (max-width: 912px) {
+  .margin {
+    margin-top: 44px;
+  }
+  .margin2 {
+    margin-top: 8px;
+  }
+}
+
 @media (max-width: 820px) {
   .pc {
     display: none;
@@ -13335,14 +13376,14 @@ input[type="password"] {
     margin: 0;
   }
   .share img {
-    max-width: 331px;
+    max-width: 600px;
     margin-bottom: 359px;
   }
   .share .comment {
-    width: 336px;
-    padding-bottom: 45px;
+    width: 600px;
+    padding-bottom: 0px;
     left: 0;
-    top: 350px;
+    top: 480px;
   }
   .student img {
     width: 100px;
@@ -13520,8 +13561,14 @@ input[type="password"] {
   .image2 h2, .image2 .h2 {
     padding: 40px 50px 16px;
   }
+  .share img {
+    max-width: 450px;
+  }
   .share .comment {
-    height: 178px;
+    width: 450px;
+    padding-bottom: 16px;
+    left: 0;
+    top: 500px;
   }
   .join-icon {
     padding-top: 40px;
@@ -13546,6 +13593,19 @@ input[type="password"] {
   }
 }
 
+@media (max-width: 450px) {
+  .share img {
+    max-width: 351px;
+    margin-bottom: 359px;
+  }
+  .share .comment {
+    width: 351px;
+    padding-bottom: 0px;
+    left: 0;
+    top: 400px;
+  }
+}
+
 .scrollBar {
   padding-top: 20px;
 }
@@ -13564,7 +13624,7 @@ input[type="password"] {
 }
 
 .mins {
-  margin-right: 106px;
+  margin-right: 60px;
 }
 
 .mins + h2, .mins + .h2 {
@@ -13614,6 +13674,31 @@ input[type="password"] {
   }
   .price {
     height: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mins {
+    padding-left: 150px;
+    margin-left: 8px;
+  }
+  .price {
+    margin-left: 82px;
+  }
+}
+
+@media (max-width: 449px) {
+  .mins {
+    padding-left: 82px;
+  }
+  .price {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .price {
+    margin-left: 0;
   }
 }
 
