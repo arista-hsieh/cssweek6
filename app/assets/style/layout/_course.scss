@@ -14,7 +14,7 @@
   }
 }
 .mins{
-  margin-right: 106px;
+  margin-right: 60px;
 }
 .mins + h2{
   margin-right: 59px;
@@ -54,5 +54,27 @@
   }
   .price{
     height: 48px;
+  }
+}
+@media(max-width:767px){
+  .mins{
+    padding-left: 150px;
+    margin-left: 8px;
+  }
+  .price{
+    margin-left: 82px;
+  }
+}
+@media(max-width:449px){
+  .mins{
+    padding-left: 82px;
+  }
+  .price{
+    margin-left: 16px;
+  }
+}
+@media(max-width:400px){
+  .price{
+    margin-left: 0;
   }
 }
