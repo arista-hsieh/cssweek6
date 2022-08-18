@@ -13162,24 +13162,172 @@ h1, .h1 {
   background-size: cover;
 }
 
-.share {
-  position: relative;
+.feedback {
+  background-image: url(./images/share.jpg);
+  height: 733px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
 }
 
-.share img {
-  position: relative;
-  max-width: 525px;
+@media (max-width: 992px) {
+  .feedback {
+    height: auto;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 429px;
+}
+
+@media (max-width: 992px) {
+  .swiper {
+    height: auto;
+  }
+}
+
+.swiper-img {
+  top: 0;
+  left: 10px;
+  width: 60%;
+  height: 90%;
   border-radius: 24px;
-  margin-bottom: 198px;
+  position: absolute;
 }
 
-.share .comment {
+.swiper-img::after {
+  content: "";
+  border: 1px solid gray;
   position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #7C7E77;
+  border-radius: 24px;
+  left: -10px;
+  top: 10px;
+  z-index: -1;
+}
+
+@media (max-width: 992px) {
+  .swiper-img {
+    left: -5px;
+    top: 5px;
+  }
+}
+
+.swiper-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 24px;
+}
+
+@media (max-width: 992px) {
+  .swiper-img {
+    position: relative;
+    width: calc(100% - 5px);
+    height: 213px;
+    left: 5px;
+    margin-bottom: 40px;
+  }
+}
+
+.swiper .comment {
+  width: 45%;
+  padding: 32px;
   border-radius: 24px 24px 24px 0;
   background-color: #fff;
-  top: 261px;
-  left: 509px;
-  width: 416px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.swiper .comment h3, .swiper .comment .h3 {
+  font-size: 18px;
+}
+
+.swiper .comment-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 32px;
+  bottom: 100%;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+@media (max-width: 991px) {
+  .swiper .comment-img {
+    width: 80px;
+    height: 80px;
+    right: 24px;
+    top: -30px;
+    bottom: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .swiper .comment {
+    position: relative;
+    width: 100%;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+.swiper .swiper-button-next:after,
+.swiper .swiper-button-prev:after {
+  content: '';
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: unset;
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
+  color: #62DB54;
+}
+
+.swiper .swiper-pagination {
+  position: unset;
+  width: auto;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: #62DB54;
+  opacity: initial;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+  width: 16px;
+  border-radius: 100px;
+}
+
+.swiper-buttons {
+  bottom: 0;
+  left: 30%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+  position: absolute;
+}
+
+@media (max-width: 991px) {
+  .swiper-buttons {
+    position: initial;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
 }
 
 .student img {
@@ -13303,19 +13451,6 @@ input[type="password"] {
   }
 }
 
-@media (max-width: 992px) {
-  .share img {
-    max-width: 600px;
-    margin-bottom: 359px;
-  }
-  .share .comment {
-    width: 600px;
-    padding-bottom: 16px;
-    left: 0;
-    top: 600px;
-  }
-}
-
 @media (max-width: 912px) {
   .margin {
     margin-top: 44px;
@@ -13374,21 +13509,6 @@ input[type="password"] {
   main {
     padding-top: 80px;
     margin: 0;
-  }
-  .share img {
-    max-width: 600px;
-    margin-bottom: 359px;
-  }
-  .share .comment {
-    width: 600px;
-    padding-bottom: 0px;
-    left: 0;
-    top: 480px;
-  }
-  .student img {
-    width: 100px;
-    height: 100px;
-    position: absolute;
   }
   .join {
     -webkit-box-orient: vertical;
@@ -13561,15 +13681,6 @@ input[type="password"] {
   .image2 h2, .image2 .h2 {
     padding: 40px 50px 16px;
   }
-  .share img {
-    max-width: 450px;
-  }
-  .share .comment {
-    width: 450px;
-    padding-bottom: 16px;
-    left: 0;
-    top: 500px;
-  }
   .join-icon {
     padding-top: 40px;
     padding-bottom: 24px;
@@ -13584,25 +13695,12 @@ input[type="password"] {
     padding-right: 24px;
     padding-left: 24px;
   }
-  .buttom {
+  .button {
     margin-bottom: 40px;
   }
   .footer {
     font-size: 12px;
     line-height: 14px;
-  }
-}
-
-@media (max-width: 450px) {
-  .share img {
-    max-width: 351px;
-    margin-bottom: 359px;
-  }
-  .share .comment {
-    width: 351px;
-    padding-bottom: 0px;
-    left: 0;
-    top: 400px;
   }
 }
 
